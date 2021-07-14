@@ -187,3 +187,32 @@ Squad Area Style
 .footer-des p {
   font-size: 18px;
 }
+
+/*  Media Quaery */
+/* Mobile Responsive */
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+  .players-area,
+  .squad-area,
+  .tramsfer-market {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 16px;
+    margin: 15px;
+  }
+  .players-info-card {
+    width: 100%;
+  }
+  .squad-copa-america img,
+  .squad-euro img {
+    margin: 15px;
+  }
+  .squad-title {
+    margin-right: 40px;
+  }
+  .footer-logo img {
+    width: 320px;
+    height: 80px;
+  }
+}
