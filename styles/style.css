@@ -24,16 +24,12 @@ header section style
 --------*/
 
 .top-head {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-content: center;
   height: 600px;
-  padding: 30px;
-}
-.content-set-header {
-  width: 40%;
-  padding: 0.3%;
-  height: 438px;
+  padding: 10px;
 }
 
 .section-title {
@@ -41,6 +37,7 @@ header section style
   font-size: 64px;
   color: #ffffff;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 .heading-title {
@@ -63,13 +60,12 @@ header section style
   color: #ffffff;
 }
 .heading-img {
-  margin-left: 100px;
   margin-right: 140px;
   margin-top: 50px;
 }
 .heading-img img {
-  width: 506.01px;
-  height: 400px;
+  width: 556.01px;
+  height: 438px;
 }
 /* Main Section Styles */
 
@@ -191,10 +187,31 @@ Squad Area Style
 /*  Media Quaery */
 /* Mobile Responsive */
 @media only screen and (max-width: 688px) {
-  .main {
-    align-content: center;
-    justify-content: center;
+  header {
+    width: 100%;
+    padding: 10px;
   }
+  .top-head {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .section-title {
+    font-weight: 700;
+    font-size: 40px;
+    color: #ffff;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .heading-img img {
+    height: 250px;
+    width: 300px;
+  }
+  .heading-title {
+    margin-left: 0px;
+  }
+  .heading-img {
+    margin-right: 0;
+  }
+
   .players-area,
   .squad-area,
   .tramsfer-market {
@@ -207,10 +224,15 @@ Squad Area Style
   }
   .squad-copa-america img,
   .squad-euro img {
-    margin: 15px;
+    margin: 60px;
+    height: 250px;
+    width: 300px;
   }
   .squad-title {
     margin-right: 40px;
+  }
+  .transfer-title {
+    font-size: 25px;
   }
   .footer-logo img {
     width: 320px;
