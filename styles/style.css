@@ -191,9 +191,9 @@ Squad Area Style
 /*  Media Quaery */
 /* Mobile Responsive */
 @media only screen and (max-width: 688px) {
-  .container,
-  .transfer {
-    width: 100%;
+  .main {
+    align-content: center;
+    justify-content: center;
   }
   .players-area,
   .squad-area,
